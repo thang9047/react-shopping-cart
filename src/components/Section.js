@@ -6,6 +6,7 @@ import Cart from './section/Cart'
 import Contact from './section/Contact'
 import Detail from './section/Detail' 
 import Login from './section/Login' 
+import Register from './section/Register'
 import Payment from './section/Payment'
 
 
@@ -20,6 +21,7 @@ export class Section extends Component {
         <Route path="/cart" exact component={Cart} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/login" exact component={Login} />
+        <Route path="/register" exact component={Register} />
         <Route path="/payment" exact component={Payment} />
       </section>
     )

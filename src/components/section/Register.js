@@ -3,12 +3,18 @@ import { Link } from 'react-router-dom'
 import '../css/login.css'
 
 
-export class Login extends Component {
+export class Register extends Component {
   render() {
     return (
       <div className="login_page">
       <form>
-        <h2>Login</h2>
+      <h2>Register</h2>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Name"
+        />
         <input
           type="email"
           name="email"
@@ -23,8 +29,8 @@ export class Login extends Component {
           placeholder="Password"
         />
         <div className="row">
-          <button type="submit">Login</button>
-          <Link to="/register">Register</Link>
+          <button type="submit">Register</button>
+          <Link to="/login">Login</Link>
         </div>
       </form>
     </div>
@@ -32,4 +38,4 @@ export class Login extends Component {
   }
 }
 
-export default Login
+export default Register
